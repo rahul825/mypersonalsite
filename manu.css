@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.gallery a {
+    width: 30%;
+    height: 50vh;
+}
+
+header a:hover {
+    color: green;
+}
+
+header {
+    background-image: linear-gradient(to left, white, lightblue);
+    padding: 20px;
+    text-align: left;
+    font-size: 30px;
+    color: blue;
+}
+
+.header.footer {
+    background-color: black;
+}
+
+section {
+    width: 100%;
+    height: 60vh;
+    background-image: linear-gradient(to left, white, lightblue);
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left, white 80%, lightblue 20%);
+}
+
+.upper {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, white 80%, lightblue 20%);
+}
+
+.logo {
+    width: 30%;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 60%;
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 18px;
+    justify-content: space-around;
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+main {
+    height: 80vh;
+    width: 100%;
+    top: 200px;
+}
+
+.containt {
+    text-transform: uppercase;
+    padding-left: 90px;
+    padding-top: 100px;
+}
+
+.containt h3,
+h4,
+{
+    margin-bottom: 20px;
+    float: left;
+    width: 60%;
+    font-size: 30px;
+    padding: 20px;
+    color: coral;
+}
+
+.containt button {
+    float: left;
+    margin-top: 20px;
+    padding: 5px;
+    width: 15%;
+    color: white;
+    background-color: blue;
+    border-color: red;
+    border-radius: 20px;
+    font-family: arial;
+}
+
+.cont {
+    height: 300px;
+    float: right;
+    background-color: lightblue;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    margin-right: 50px;
+}
+
+.footer {
+    background-color: rgb(48, 42, 42);
+    padding: 10px;
+    text-align: center;
+    color: rgb(252, 243, 243);
+    height: auto;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    text-align: left;
+    padding: 80px;
+    font-size: 15px;
+}
+
+.column p {
+    color: gray;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .containt button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .logo,
+    .nav a {
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        text-align: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        overflow: hidden;
+    }
+}
